@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native"
 
-export const homeStyles = StyleSheet.create({
+export const styles = StyleSheet.create({
   background:{
     alignItems: 'center',
     height: '100%',
@@ -11,8 +11,8 @@ export const homeStyles = StyleSheet.create({
     //backgroundColor: '#FA3F30',
     height: '100%',
   },
-   title: {
-    marginBottom: 200,
+  title: {
+    marginBottom: 50,
   },
   titleText:{
     color: '#94477F', 
@@ -46,12 +46,12 @@ export const homeStyles = StyleSheet.create({
     color: '#333',
   },
   description: { 
-    fontSize: 14,
+    fontSize: 16,
     color: '#777',
     fontWeight: 'bold',
   },
   btnSubmitAluno:{
-    backgroundColor: '#61B482',
+    backgroundColor: '#94477F',
     width: '100%',
     height: 81,
     alignItems: 'center', 
@@ -65,7 +65,7 @@ export const homeStyles = StyleSheet.create({
     fontWeight: 'bold', 
   },
   btnSubmitCantina:{
-    backgroundColor: '#B4A761',
+    backgroundColor: '#94477F',
     width: '100%',
     height: 81,
     alignItems: 'center', 
@@ -99,5 +99,4 @@ export const homeStyles = StyleSheet.create({
     marginTop: 40,
     flex: 0.60,
   },
-
 })

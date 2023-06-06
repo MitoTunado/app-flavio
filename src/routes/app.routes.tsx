@@ -1,8 +1,8 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { Home } from "../screens/home/home-app";
-import { LoginAluno } from "../screens/logins/login-aluno/login-aluno";
-import { LoginAdmin } from "../screens/logins/login-admin/login-admin";
-import { LoginCantina } from "../screens/logins/login-cantina/login-cantina";
+import { FrontEnd } from "../screens/logins/front-end/front-end";
+import { DataBase } from "../screens/logins/data-base/data-base";
+import { BackEnd } from "../screens/logins/back-end/back-end";
 const { Navigator, Screen } = createNativeStackNavigator()
 
 export function AppRoutes() { 
@@ -13,16 +13,16 @@ export function AppRoutes() {
       component={Home}
       /> 
       <Screen
-        name="LoginAluno"
-        component={LoginAluno}
+        name="FrontEnd"
+        component={FrontEnd}
       />
       <Screen
-        name="LoginAdmin"
-        component={LoginAdmin}
+        name="DataBase"
+        component={DataBase}
       />
       <Screen
-        name="LoginCantina"
-        component={LoginCantina}
+        name="BackEnd"
+        component={BackEnd}
       />
     </Navigator>
   )

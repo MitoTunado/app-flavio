@@ -9,16 +9,16 @@ export function Home() {
 
   const navigation = useNavigation()
 
-  function handleLoginAluno() { 
-    navigation.navigate('LoginAluno');
+  function handleFrontend() { 
+    navigation.navigate('FrontEnd');
   }
 
-  function handleLoginAdmin() { 
-    navigation.navigate('LoginAdmin'); 
+  function handleBackend() { 
+    navigation.navigate('BackEnd'); 
   }
 
-  function handleLoginCantina() {
-    navigation.navigate('LoginCantina');
+  function handleDatabase() {
+    navigation.navigate('DataBase');
   }
 
 
@@ -26,25 +26,26 @@ export function Home() {
     <View style={homeStyles.background}> 
       <View style={homeStyles.container}>
         <View>
-            <Text style={homeStyles.titleText2}><Text style={homeStyles.titleText}>IF</Text>ICHAS</Text>  
-            <Text style={homeStyles.titleDescription}>Software inteligente de gestão de fichas.</Text>
+            <Text style={homeStyles.titleText2}><Text style={homeStyles.titleText}>Guru</Text>Code</Text>  
+            <Text style={homeStyles.titleDescription}>Software informativo relacionado a programção!</Text>
+        </View>
+        <View style={homeStyles.welcomeBack}> 
+          <Text style={homeStyles.welcome}> Bem Vindo! </Text>
+          <Text style={homeStyles.description}> Pressione um dos cards para mais informações! </Text>
         </View>
 
-        <View> 
-          <Text> </Text>
-        </View>
-
+  
         <View style={homeStyles.box}>
-          <TouchableOpacity style={homeStyles.btnSubmitAluno} onPress={handleLoginAluno}>
-              <Text style={homeStyles.submitTextAluno}>LOGIN - ALUNO</Text>
+          <TouchableOpacity style={homeStyles.btnSubmitAluno} onPress={handleFrontend}>
+              <Text style={homeStyles.submitTextAluno}>FRONT-END</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={homeStyles.btnSubmitCantina} onPress={handleLoginCantina}>
-              <Text style={homeStyles.submitTextCantina}>LOGIN - CANTINA</Text>
+          <TouchableOpacity style={homeStyles.btnSubmitCantina} onPress={handleBackend}>
+              <Text style={homeStyles.submitTextCantina}>BACK-END</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={homeStyles.btnSubmitAdmin} onPress={handleLoginAdmin}>
-              <Text style={homeStyles.submitTextAdmin}>LOGIN - ADMIN</Text>
+          <TouchableOpacity style={homeStyles.btnSubmitAdmin} onPress={handleDatabase}>
+              <Text style={homeStyles.submitTextAdmin}>DATABASE</Text>
           </TouchableOpacity>
         </View>
       </View>
